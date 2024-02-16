@@ -100,11 +100,12 @@ End Sub
 
 Sub FormattingColors()
 
-    Dim ws As Worksheet
+
+Dim ws As Worksheet
     
-    Dim column As Integer
+Dim column As Integer
     
-    Dim Percentage_Change As Double
+Dim Percentage_Change As Double
 
     ' Loop through each worksheet in the workbook
     For Each ws In Worksheets
