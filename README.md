@@ -10,7 +10,7 @@
 1. https://github.com/LegallyNotBlonde/Stock-Market-Analysis-2018-2020/blob/main/Screen%20shot%20results%20%20for%202018.png
 2. https://github.com/LegallyNotBlonde/Stock-Market-Analysis-2018-2020/blob/main/Screen%20shot%20results%20%20for%202019.png
 3. https://github.com/LegallyNotBlonde/Stock-Market-Analysis-2018-2020/blob/main/Screen%20shot%20results%20%20for%202020.png
-4.  BVA script link to the file: https://github.com/LegallyNotBlonde/Stock-Market-Analysis-2018-2020/blob/main/Stock%20Change%20VBA%20Script%20file%20-%202%20subrutines.bas
+4.  VBA script link to the file: https://github.com/LegallyNotBlonde/Stock-Market-Analysis-2018-2020/blob/main/Stock%20Change%20VBA%20Script%20file%20-%202%20subrutines.bas
 
 
 
