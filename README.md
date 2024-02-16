@@ -1,6 +1,7 @@
 # Stock-Market-Analysis for 2018-2020#
 
 ##Analyzing muti-stock price and volume change for the years of 2018. 2019, and 2020##
+
 * Conducting an in-depth analysis of multi-stock price dynamics and volume fluctuations throughout the fiscal years of 2018, 2019, and 2020 constitutes the primary objective of this project. The analytical framework involves parsing through extensive datasets encompassing stock market metrics over the specified period.
 * The implemented script iterates through rows of data to discern patterns and unveil insights regarding the performance of individual stocks.
 * Key calculated metrics include yearly price change, both in total value and percentage terms. Furthermore, the script identifies and accentuates noteworthy trends such as the stock with the highest percentage increase, signifying optimal performance, as well as pinpointing the most significant decliner in percentage terms. Additionally, the analysis discerns the stock boasting the highest volume, indicative of either superior market liquidity or enduring market sustainability.
@@ -52,7 +53,7 @@ Total_Stock_Volume = ws.Cells(i, 7).Value + Total_Stock_Volume
         ws.Cells(y, 11).Value = Percentage_Change
         ws.Cells(y, 12).Value = Total_Stock_Volume
         
-'fund max stock value, max % increas and max % decrease
+'fund max stock value, max % increase and max % decrease
         Max_Volume = Application.WorksheetFunction.Max(ws.Range("L:L"))
         ws.Cells(4, 17) = Max_Volume
         Gr_Incr = Application.WorksheetFunction.Max(ws.Range("K:K"))
@@ -69,17 +70,12 @@ Total_Stock_Volume = ws.Cells(i, 7).Value + Total_Stock_Volume
         MaxDecrTicker = Application.WorksheetFunction.Index(ws.Range("I:I"), Application.WorksheetFunction.Match(Gr_Decr, ws.Range("K:K"), 0))
         MaxVolTicker = Application.WorksheetFunction.Index(ws.Range("I:I"), Application.WorksheetFunction.Match(Max_Volume, ws.Range("L:L"), 0))
         
-    
-        
-        
         
         x = i + 1
         y = y + 1
         Yearly_Change = 0
         Percentage_Change = 0
         Total_Stock_Volume = 0
-
-
 
 
     End If
@@ -103,22 +99,30 @@ End Sub
 
 
 Sub FormattingColors()
+
     Dim ws As Worksheet
+    
     Dim column As Integer
+    
     Dim Percentage_Change As Double
 
     ' Loop through each worksheet in the workbook
     For Each ws In Worksheets
-        column = 11 ' Assuming you want to apply color to column K (11th column)
+    
+        column = 11 ' Assuming I want to apply color to column K (11th column) on every sheet
 
         ' Loop through rows in the current worksheet
         For i = 2 To ws.Cells(ws.Rows.Count, 1).End(xlUp).Row
         
-            ' Set colors based on values (green for >0, red for <0, and default for 0)
+            ' Set colors based on values (green for >0, red for <0, and default (no color) for changes equal to 0)
+            'the task did not specify, which color should the cells have if the change is equal to 0
+            
             If ws.Cells(i, column).Value > 0 Then
                 ws.Cells(i, column).Interior.ColorIndex = 4 ' Green
+                
             ElseIf ws.Cells(i, column).Value < 0 Then
                 ws.Cells(i, column).Interior.ColorIndex = 3 ' Red
+                
             Else
                 ws.Cells(i, column).Interior.ColorIndex = 2 ' Default color
             End If
