@@ -5,6 +5,12 @@
 * Conducting an in-depth analysis of multi-stock price dynamics and volume fluctuations throughout the fiscal years of 2018, 2019, and 2020 constitutes the primary objective of this project. The analytical framework involves parsing through extensive datasets encompassing stock market metrics over the specified period.
 * The implemented script iterates through rows of data to discern patterns and unveil insights regarding the performance of individual stocks.
 * Key calculated metrics include yearly price change, both in total value and percentage terms. Furthermore, the script identifies and accentuates noteworthy trends such as the stock with the highest percentage increase, signifying optimal performance, as well as pinpointing the most significant decliner in percentage terms. Additionally, the analysis discerns the stock boasting the highest volume, indicative of either superior market liquidity or enduring market sustainability.
+* Links to screenshots
+  step 1 https://github.com/LegallyNotBlonde/Stock-Market-Analysis-2018-2020/blob/main/Screen%20shot%20results%20%20for%202018.png
+step 2 https://github.com/LegallyNotBlonde/Stock-Market-Analysis-2018-2020/blob/main/Screen%20shot%20results%20%20for%202019.png
+step 3 https://github.com/LegallyNotBlonde/Stock-Market-Analysis-2018-2020/blob/main/Screen%20shot%20results%20%20for%202020.png
+
+
 
 * Script:
 
